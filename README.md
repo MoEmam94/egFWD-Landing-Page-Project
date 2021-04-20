@@ -3,7 +3,7 @@
 ### Table of Contents
 1. Introduction
 2. Sources of Help
-3. Site description and how to test!
+3. Site description
 
 ### Introduction
 In this project I combined my learned skills in HTML, CSS and JavaScript to make a responsive Landing Page with different  kinds of functionalities.
@@ -14,7 +14,7 @@ In this project I combined my learned skills in HTML, CSS and JavaScript to make
 * MDN Web Docs
 * stackoverflow website
 
-### Site description and how to test!
+### Site description
 The landing page main functionalities are:
 * Dynamically adds section links in the navigation menu.
 * An Add a new section button which adds a new section to the bottom of the page.
