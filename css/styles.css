@@ -74,7 +74,7 @@ section {
     padding: 10px;
 }
 a {
-    border: 2px solid rgb(29, 4, 165);
+    border: 2px solid blue;
     border-radius: 20%;
     padding: 2px;
 }

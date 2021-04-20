@@ -75,9 +75,16 @@ navList.appendChild(frag); //appending the fragment to the Navigation List
 
 // Add class 'active' to section when near top of viewport
 window.addEventListener('scroll', () => {
-	for (let section of sections) {
-	let rect = section.getBoundingClientRect();
-    (rect.top > 0 && rect.top < 300) ? section.classList.add('your-active-class') : section.classList.remove('your-active-class');
+	for (let i = 0; i < sections.length; i++) {
+	let rect = sections[i].getBoundingClientRect();
+    let sectionAnchor = document.querySelectorAll('a');
+    if (rect.top > 0 && rect.top < 300) {
+        sections[i].classList.add('your-active-class');
+        sectionAnchor[i].style.backgroundColor = 'red';
+     } else {
+        sections[i].classList.remove('your-active-class');
+        sectionAnchor[i].style.backgroundColor = 'blue';
+        }    
 }});
 /**
  * End Main Functions
