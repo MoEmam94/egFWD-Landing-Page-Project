@@ -267,7 +267,3 @@ section.your-active-class .landing__container::after {
         align-items: center;
     }
   }
-/*highlights the viewd section in the navigation menue*/
-.aciveSecLi {
-    display: none;
-}

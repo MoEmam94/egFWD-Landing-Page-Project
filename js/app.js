@@ -36,7 +36,7 @@ const addSection = () => { //function for the add new section button
 
         <p>Aliquam a convallis justo. Vivamus venenatis, erat eget pulvinar gravida, ipsum lacus aliquet velit, vel luctus diam ipsum a diam. Cras eu tincidunt arcu, vitae rhoncus purus. Vestibulum fermentum consectetur porttitor. Suspendisse imperdiet porttitor tortor, eget elementum tortor mollis non.</p>
       </div>
-    </section>`
+    </section>`;
     let newSection = document.createElement('section'); //create a new section element
     document.querySelector('main').appendChild(newSection); 
     newSection.outerHTML =  newSectionHTML;
@@ -48,8 +48,9 @@ const addSection = () => { //function for the add new section button
 	linkList[i].textContent = `Section ${i + 1}`;
     linkList[i].addEventListener('click', (evt) => {
     sections[i].scrollIntoView({behavior: 'smooth'});
-    })}}
-
+    });
+  }
+};
 
 /**
  * End Helper Functions
@@ -63,9 +64,9 @@ let createAndAdd = (sec) => {
     secListItem.appendChild(secLink);
     secLink.addEventListener('click', (evt) => { //clicking an item now scolls to the section
     sec.scrollIntoView({behavior: 'smooth'});
-    })
+    });
     frag.appendChild(secListItem); //appending li elements to the document fragment
-}
+};
 // build the nav
 for (let section of sections) { //loops over sections and creates and adds li tags and a tags for each section
 	createAndAdd(section);
@@ -76,8 +77,8 @@ navList.appendChild(frag); //appending the fragment to the Navigation List
 window.addEventListener('scroll', () => {
 	for (let section of sections) {
 	let rect = section.getBoundingClientRect();
-    (rect.top > 0 && rect.top < 300) ? section.classList.add('your-active-class') : section.classList.remove('your-active-class')
-}})
+    (rect.top > 0 && rect.top < 300) ? section.classList.add('your-active-class') : section.classList.remove('your-active-class');
+}});
 /**
  * End Main Functions
  * Begin Events
